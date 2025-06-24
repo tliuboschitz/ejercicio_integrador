@@ -286,3 +286,136 @@ body.modo-oscuro .form-button {
 body.modo-oscuro .form-button:hover {
   background-color: #555;
 }
+/* ========== Estilos para .container-home, .pill-title, .sub-pill-title, .table-container y efectos de hover ========== */
+.container-home {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.pill-title {
+  background-color: #eee;
+  color: #000;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.sub-pill-title {
+  background-color: #ccc;
+  color: #000;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.table-container {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px;
+  border: 1px solid #666;
+  text-align: left;
+  color: #fff;
+}
+
+/* Estilos para modo claro */
+body.modo-claro .container-home {
+  background-color: #f4f4f4;
+}
+
+body.modo-claro .table-container {
+  background-color: #fff;
+}
+
+body.modo-claro .table-container th,
+body.modo-claro .table-container td {
+  color: #000;
+}
+
+body.modo-claro .pill-title,
+body.modo-claro .sub-pill-title {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Hover en celdas de tabla */
+body.modo-oscuro .table-container td:hover {
+  background-color: #555;
+}
+
+body.modo-claro .table-container td:hover {
+  background-color: #e0e0e0;
+}
+
+.card-info {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.modo-claro .card-info {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #900;
+  margin-bottom: 15px;
+}
+
+/* === Estilos para la sección "Sobre Mí" con imagen y texto alineados lado a lado en tarjeta responsive === */
+.card-info.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  flex: 1 1 60%;
+}
+
+.card-image {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card-info.row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .card-text,
+  .card-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
