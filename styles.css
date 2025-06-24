@@ -1,4 +1,6 @@
-/* Estilos generales */
+/* ============================= */
+/*        ESTILOS GENERALES       */
+/* ============================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -7,7 +9,9 @@ body {
   color: #333;
 }
 
-/* Header */
+/* ============================= */
+/*             HEADER            */
+/* ============================= */
 header {
   background-color: #222;
   color: #fff;
@@ -20,7 +24,9 @@ header h1 {
   font-size: 2rem;
 }
 
-/* Navegación */
+/* ============================= */
+/*          NAVEGACIÓN           */
+/* ============================= */
 nav ul {
   list-style: none;
   padding: 0;
@@ -47,12 +53,16 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Main */
+/* ============================= */
+/*             MAIN              */
+/* ============================= */
 main {
   padding: 20px;
 }
 
-/* Footer */
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
 footer {
   background-color: #222;
   color: #aaa;
@@ -61,7 +71,9 @@ footer {
   margin-top: 20px;
 }
 
-/* Imágenes */
+/* ============================= */
+/*            IMÁGENES           */
+/* ============================= */
 img {
   max-width: 100%;
   height: auto;
@@ -69,7 +81,9 @@ img {
   margin: 20px auto;
 }
 
-/* Tablas */
+/* ============================= */
+/*             TABLAS            */
+/* ============================= */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -85,7 +99,9 @@ th, td {
   text-align: center;
 }
 
-/* Listas */
+/* ============================= */
+/*             LISTAS            */
+/* ============================= */
 ul {
   margin-top: 10px;
 }
@@ -94,7 +110,9 @@ ul li {
   margin: 8px 0;
 }
 
-/* Formulario de contacto */
+/* ============================= */
+/*       FORMULARIO DE CONTACTO  */
+/* ============================= */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -137,7 +155,10 @@ form button:hover {
   background-color: #444;
 }
 
-/* Responsive general para pantallas mas pequenas que una compu.  */
+/* ============================= */
+/*        ESTILOS RESPONSIVE     */
+/*    PARA PANTALLAS PEQUEÑAS   */
+/* ============================= */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -160,7 +181,10 @@ form button:hover {
     font-size: 1.5rem;
   }
 }
-/* Modo claro y modo oscuro */
+
+/* ============================= */
+/*         MODO CLARO Y OSCURO   */
+/* ============================= */
 body.modo-claro {
   background-color: #f4f4f4;
   color: #333;
@@ -207,7 +231,10 @@ body.modo-oscuro form button:hover {
   background-color: #555;
 }
 
-/* Estilos para los botones de cambio de modo */
+/* ============================= */
+/*     ESTILOS PARA BOTONES DE   */
+/*       CAMBIO DE MODO          */
+/* ============================= */
 .modo-toggle {
   position: absolute;
   top: 10px;
@@ -232,6 +259,10 @@ body.modo-oscuro form button:hover {
   color: #fff;
 }
 
+/* ============================= */
+/*      ESTILOS PARA FORMULARIO  */
+/*        INPUTS Y BOTONES       */
+/* ============================= */
 .form-input {
   display: block;
   width: 100%;
@@ -267,7 +298,11 @@ body.modo-oscuro form button:hover {
   background-color: #c00;
 }
 
-/* Modo oscuro específico */
+/* ============================= */
+/*    MODO OSCURO ESPECÍFICO     */
+/*    PARA FORMULARIO INPUTS Y   */
+/*           BOTONES             */
+/* ============================= */
 body.modo-oscuro .form-input {
   background-color: #444;
   color: #fff;
@@ -286,7 +321,11 @@ body.modo-oscuro .form-button {
 body.modo-oscuro .form-button:hover {
   background-color: #555;
 }
-/* ========== Estilos para .container-home, .pill-title, .sub-pill-title, .table-container y efectos de hover ========== */
+
+/* ============================= */
+/*  ESTILOS PARA CONTENEDORES    */
+/*   PRINCIPALES Y TÍTULOS       */
+/* ============================= */
 .container-home {
   max-width: 900px;
   margin: 30px auto;
@@ -315,6 +354,9 @@ body.modo-oscuro .form-button:hover {
   margin-bottom: 15px;
 }
 
+/* ============================= */
+/*       CONTENEDOR DE TABLAS    */
+/* ============================= */
 .table-container {
   background-color: #444;
   padding: 20px;
@@ -334,7 +376,9 @@ body.modo-oscuro .form-button:hover {
   color: #fff;
 }
 
-/* Estilos para modo claro */
+/* ============================= */
+/*       ESTILOS PARA MODO CLARO */
+/* ============================= */
 body.modo-claro .container-home {
   background-color: #f4f4f4;
 }
@@ -354,7 +398,9 @@ body.modo-claro .sub-pill-title {
   color: #000;
 }
 
-/* Hover en celdas de tabla */
+/* ============================= */
+/*       EFECTOS HOVER EN TABLAS */
+/* ============================= */
 body.modo-oscuro .table-container td:hover {
   background-color: #555;
 }
@@ -363,6 +409,9 @@ body.modo-claro .table-container td:hover {
   background-color: #e0e0e0;
 }
 
+/* ============================= */
+/*       ESTILOS PARA TARJETAS   */
+/* ============================= */
 .card-info {
   background-color: #444;
   padding: 20px;
@@ -376,6 +425,10 @@ body.modo-claro .card-info {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================= */
+/*      ESTILOS PARA IMÁGENES    */
+/*        DE PERFIL              */
+/* ============================= */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -385,7 +438,12 @@ body.modo-claro .card-info {
   margin-bottom: 15px;
 }
 
-/* === Estilos para la sección "Sobre Mí" con imagen y texto alineados lado a lado en tarjeta responsive === */
+/* ============================= */
+/*    ESTILOS PARA SECCIÓN       */
+/*           "SOBRE MÍ"          */
+/*    CON IMAGEN Y TEXTO LADO A  */
+/*          LADO                  */
+/* ============================= */
 .card-info.row {
   display: flex;
   align-items: center;
@@ -408,6 +466,10 @@ body.modo-claro .card-info {
   height: auto;
 }
 
+/* ============================= */
+/*    ESTILOS RESPONSIVE PARA    */
+/*    LA SECCIÓN "SOBRE MÍ"      */
+/* ============================= */
 @media (max-width: 768px) {
   .card-info.row {
     flex-direction: column;
