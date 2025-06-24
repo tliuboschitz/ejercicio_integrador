@@ -19,6 +19,10 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="modo-toggle">
+            <button id="modo-claro">Modo Claro</button>
+            <button id="modo-oscuro">Modo Oscuro</button>
+        </div>
     </header>
 
     <main>
@@ -32,3 +36,17 @@
         </ul>
 
         
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#modo-claro").click(function() {
+                $("body").removeClass("modo-oscuro").addClass("modo-claro");
+            });
+
+            $("#modo-oscuro").click(function() {
+                $("body").removeClass("modo-claro").addClass("modo-oscuro");
+            });
+        });
+    </script>
